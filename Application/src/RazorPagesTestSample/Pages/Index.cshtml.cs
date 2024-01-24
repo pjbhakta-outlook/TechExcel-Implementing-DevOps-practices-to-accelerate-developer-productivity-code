@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RazorPagesTestSample.Data;
 using System.Threading;
+using System.ComponentModel.DataAnnotations;
 
 namespace RazorPagesTestSample.Pages
 {
@@ -18,6 +19,7 @@ namespace RazorPagesTestSample.Pages
         }
 
         [BindProperty]
+        [MaxLength(250)]
         public Message Message { get; set; }
 
         public IList<Message> Messages { get; private set; }
