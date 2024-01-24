@@ -10,6 +10,9 @@ on:
         - prod
 
 name: Azure Bicep-Advanced
+permissions:
+  contents: read
+  id-token: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
