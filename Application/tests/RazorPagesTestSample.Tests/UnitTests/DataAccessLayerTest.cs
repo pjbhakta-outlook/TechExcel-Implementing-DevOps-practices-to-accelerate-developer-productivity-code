@@ -128,6 +128,11 @@ namespace RazorPagesTestSample.Tests.UnitTests
         }
         #endregion
     
+        /// <summary>
+        /// Unit Tests for Message Validation
+        /// </summary>
+        /// <param name="messageLength"></param>
+        /// <param name="expectedValidMessage"></param>
         [Theory]
         [InlineData(150, true)]
         [InlineData(199, true)]
